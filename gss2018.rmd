@@ -56,7 +56,11 @@ barchartGC(~CAPPUN + OWNGUN,data=GSSdata, type="percent")
 
 #### Numerical Descriptive Results
 
-
+```{r}
+table1 <- xtabs(~CAPPUN + OWNGUN, data=GSSdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
 
 
