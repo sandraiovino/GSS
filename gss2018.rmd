@@ -43,10 +43,14 @@ $H_A$ : That they are independent
 
 #### Graphical Descriptive Results
 
+```{r}
+barchartGC(~CAPPUN + OWNGUN,data=GSSdata)
+barchartGC(~CAPPUN + OWNGUN,data=GSSdata, type="percent")
+
+```
 
 
-
-This graph shows that ....
+This graph shows that Gun Ownery 
 
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
