@@ -16,9 +16,6 @@ require(foreign)
 source("GrabData.R")
 ```
 
-
-
-
 #  Question 1
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
@@ -27,10 +24,17 @@ The data in the dataframe GSSdata is from the 2018 General Social Survey. The fi
 First question - Is opinion on the death penalty (CAPPUN) independent of gun ownership (OWNGUN)?
 
 
+$H_0$: CAPPUN is independent of OWNGUN   
+$H_A$ : That they are independent     
+
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+
+  CAPPUN is a variable,  
+  OWNGUN is a variable, so I  
+  use the helper file CAT ~ CAT 
 ##Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -39,9 +43,19 @@ First question - Is opinion on the death penalty (CAPPUN) independent of gun own
 
 #### Graphical Descriptive Results
 
+
+
+
+This graph shows that ....
+
+
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 #### Numerical Descriptive Results
+
+
+
+
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -67,11 +81,16 @@ Is there a difference in years of education (EDUC) between the those who did or 
 
 #### Graphical Descriptive Results
 
+
+This graph shows that ....
+
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
 
 #### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
 
 ### Inferential Results
 
