@@ -61,7 +61,8 @@ table1 <- xtabs(~CAPPUN + OWNGUN, data=GSSdata)
 rowPerc(table1)
 colPerc(table1)
 ```
-
+  This table shows that people who are in favor of the capital punishment is about 76% own a gun.  
+    Where poeple who are ppose to it is about 42% who own a gun.  
 
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
