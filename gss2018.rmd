@@ -88,8 +88,8 @@ fisher.test(table1)
 
  Chi-squared shows P-Value of 0.02 which is less than 0.05 so we reject this hypothesis CAPPUN is independent of OWNGUN.  
  
- The fisher's Exact test P- Value is 0.001 but we round up to 0.02 which is still less than 0.05.  
- This in means that fishers data rejects hypothesis as well. The odds of the ratio is 2.271 : 1   
+ The fisher's Exact test P- Value is 0.01 but we round up to 0.02 which is still less than 0.05.  
+ This in means that fishers data rejects the null hypothesis as well as with the CHI-Square test . The odds of the ratio is 2.271 : 1 which means that gun owners are 2.3 times more likely to favor capital punishement than those who don't.   
  
  
 ### Inconclusion 
@@ -137,11 +137,18 @@ plot(VOTE12~EDUC,data=GSSdata)
   
 #### Numerical Descriptive Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
+```{r}
+favstats(EDUC~VOTE12,data=GSSdata)
+```
 
 ### Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+```{r}
+t.test(EDUC~VOTE12,data=GSSdata)
+``` 
+
 
 #  Question 3
 
