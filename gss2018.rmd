@@ -20,6 +20,9 @@ source("GrabData.R")
 
  This data came from GSS.data. The background death penalty (CAPPUN) independent of gun ownership (OWNGUN). 
  
+ $H_0$: CAPPUN is independent of OWNGUN   
+$H_A$ : That they are independent 
+
  
 #  Question 1
 
@@ -33,14 +36,10 @@ First question - Is opinion on the death penalty (CAPPUN) independent of gun own
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
-
-$H_0$: CAPPUN is independent of OWNGUN   
-$H_A$ : That they are independent     
-
  
   CAPPUN is a variable,  
-  OWNGUN is a variable, so I  
-  use the helper file  
+  OWNGUN is a variable,
+  so I use the helper file    
   CAT ~ CAT  
     
     
@@ -92,12 +91,19 @@ fisher.test(table1)
  The fisher's Exact test P- Value is 0.001 but we round up to 0.02 which is still less than 0.05.  
  This in means that fishers data rejects hypothesis as well. The odds of the ratio is 2.271 : 1   
  
+ 
+### Inconclusion 
+
+We tried to answer the question that was giving to us " Is opinion on the death penalty (CAPPUN) independent of gun ownership (OWNGUN)? We when doing the graphical charts we discovered that this graph shows that the people who are in favor of capital punishment is about 50/50 in owning a gun. 
+  The people who appose capital punishment are less likely to own a gun which makes it dependent.
+  When doing the chi-sqaure the P-Value was 0.02 which is less than 0.05. This indicates that we reject the hypothesis. This means that they are that they are independent. 
 
 #  Question 2
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
 
 Is there a difference in years of education (EDUC) between the those who did or did not vote in 2012 (VOTE12)?
+
 
 ## Methods
 
