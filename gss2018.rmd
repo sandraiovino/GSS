@@ -15,7 +15,12 @@ require(tidyverse)
 require(foreign)
 source("GrabData.R")
 ```
+ 
+### Introduction 
 
+ This data came from GSS.data. The background death penalty (CAPPUN) independent of gun ownership (OWNGUN). 
+ 
+ 
 #  Question 1
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
@@ -24,17 +29,21 @@ The data in the dataframe GSSdata is from the 2018 General Social Survey. The fi
 First question - Is opinion on the death penalty (CAPPUN) independent of gun ownership (OWNGUN)?
 
 
-$H_0$: CAPPUN is independent of OWNGUN   
-$H_A$ : That they are independent     
 
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+$H_0$: CAPPUN is independent of OWNGUN   
+$H_A$ : That they are independent     
 
+ 
   CAPPUN is a variable,  
   OWNGUN is a variable, so I  
-  use the helper file CAT ~ CAT 
+  use the helper file  
+  CAT ~ CAT  
+    
+    
 ##Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
