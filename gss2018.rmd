@@ -105,7 +105,17 @@ We tried to answer the question that was giving to us " Is opinion on the death 
 Is there a difference in years of education (EDUC) between the those who did or did not vote in 2012 (VOTE12)?
 
 
+### Introduction 
+We got this file from GSS.data file.  
+$H_0$ : There is a difference of years EDUC who did VOTE12  
+$H_A$ : There is no difference of years EDU who did not VOTE12 
+
 ## Methods
+EDUC is Num  
+VOTE12 is a Factor   
+So I used helper file  
+NUM ~ CAT 
+
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
@@ -116,15 +126,16 @@ Is there a difference in years of education (EDUC) between the those who did or 
 ### Descriptive Results
 
 #### Graphical Descriptive Results
-
-
-This graph shows that ....
-
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+plot(VOTE12~EDUC,data=GSSdata)
+```
 
+  This boxchart shows that EDUC who did VOTE12 was higher education than those who did not VOTE12.       
+  
+  
 #### Numerical Descriptive Results
-
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 
