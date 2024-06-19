@@ -89,7 +89,7 @@ fisher.test(table1)
  Chi-squared shows P-Value of 0.02 which is less than 0.05 so we reject this hypothesis CAPPUN is independent of OWNGUN.  
  
  The fisher's Exact test P- Value is 0.01 but we round up to 0.02 which is still less than 0.05.  
- This in means that fishers data rejects the null hypothesis as well as with the CHI-Square test . The odds of the ratio is 2.271 : 1 which means that gun owners are 2.3 times more likely to favor capital punishement than those who don't.   
+ This in means that fishers data rejects the null hypothesis as well as with the CHI-Square test . The odds of the ratio is 2.271 : 1 which means that gun owners are 2.3 times more likely to favor capital punishment than those who don't.   
  
  
 ### Inconclusion 
@@ -107,8 +107,8 @@ Is there a difference in years of education (EDUC) between the those who did or 
 
 ### Introduction 
 We got this file from GSS.data file.  
-$H_0$ : There is a difference of years EDUC who did VOTE12  
-$H_A$ : There is no difference of years EDU who did not VOTE12 
+$H_0$ : There is no difference of years EDU who did not VOTE12
+$H_A$ : There is a difference of years EDUC who did VOTE12
 
 ## Methods
 EDUC is Num  
@@ -129,10 +129,10 @@ NUM ~ CAT
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ```{r}
-plot(VOTE12~EDUC,data=GSSdata)
+plot(EDUC~VOTE12,data=GSSdata)
 ```
 
-  This boxchart shows that EDUC who did VOTE12 was higher education than those who did not VOTE12.       
+  This boxchart shows that the people who votes in 2012 tend to have higher EDUC than those who did not VOTE12.       
   
   
 #### Numerical Descriptive Results
@@ -140,6 +140,8 @@ plot(VOTE12~EDUC,data=GSSdata)
 ```{r}
 favstats(EDUC~VOTE12,data=GSSdata)
 ```
+This Numerical Results shows that in 2012 those who did vote have almost 16 years in education.  
+Those who did not vote in 2012 have a little over 13 years of education.  
 
 ### Inferential Results
 
@@ -148,6 +150,13 @@ favstats(EDUC~VOTE12,data=GSSdata)
 ```{r}
 t.test(EDUC~VOTE12,data=GSSdata)
 ``` 
+this T tests shows that this means those who voted in 2012 have higher education than those who did not. The P-Value is 1.248e-07. When solving this equation it would be .0000001 so we reject the null hypothesis there is no difference of years EDU who did not VOTE12. 
+
+
+### Conclusion  
+
+
+
 
 
 #  Question 3
@@ -156,7 +165,13 @@ t.test(EDUC~VOTE12,data=GSSdata)
 
 Determine if a persons performance on the wordsum test (WORDSUM) is independent of their level of schooling (DEGREE).
 
+$H_0$  
+$H_A$ WORDSUM is Independent of level School Degree
 ## Methods
+WORDSUM : NUM   
+DEGREE : Factor   
+helper file I used    
+NUM ~ CAT 
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
