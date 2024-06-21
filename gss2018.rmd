@@ -16,7 +16,7 @@ require(foreign)
 source("GrabData.R")
 ```
  
-### Introduction 
+#### Introduction 
 
  This data came from GSS.data. The background death penalty (CAPPUN) independent of gun ownership (OWNGUN). 
  
@@ -105,7 +105,7 @@ We tried to answer the question that was giving to us " Is opinion on the death 
 Is there a difference in years of education (EDUC) between the those who did or did not vote in 2012 (VOTE12)?
 
 
-### Introduction 
+#### Introduction 
 We got this file from GSS.data file.  
 $H_0$ : There is no difference of years EDU who did not VOTE12
 $H_A$ : There is a difference of years EDUC who did VOTE12
@@ -119,7 +119,7 @@ NUM ~ CAT
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-##Results
+## Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
@@ -163,8 +163,11 @@ When doing the  boxchart shows that the people who voted in 2012 tend to have hi
  
 Determine if a persons performance on the wordsum test (WORDSUM) is independent of their level of schooling (DEGREE).
 
-$H_0$  
-$H_A$ WORDSUM is Independent of level School Degree
+### Introduction  
+
+$H_0$ Wordsum is not independent of level schooling DEGREE    
+$H_A$ WORDSUM is independent of level School Degree  
+
 ## Methods
 WORDSUM : NUM   
 DEGREE : Factor   
@@ -174,7 +177,7 @@ NUM ~ CAT
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-##Results
+## Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
@@ -182,11 +185,15 @@ NUM ~ CAT
 
 #### Graphical Descriptive Results
 
+<!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
 ```{r}
 plot(WORDSUM~DEGREE,data=GSSdata)
 ```
+  
+    This graph shows the Junior College and Bachelor Degree have about the same amount of Wordsum test,  
+    but graduates have a little more than Junior College or Bachelor Degree.    
 
-<!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 #### Numerical Descriptive Results
 
@@ -214,7 +221,7 @@ plot(TukeyHSD(model1),las=2)
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
-# Discussion and Conclusion
+#  Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
