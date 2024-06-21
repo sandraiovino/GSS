@@ -154,10 +154,8 @@ this T tests shows that this means those who voted in 2012 have higher education
 
 
 ### Conclusion  
-In this question we tried to figure out 
-
-
-
+In this question we tried to figure out how many people voted in 2012 have a higher education.  
+When doing the  boxchart shows that the people who voted in 2012 tend to have higher EDUC than those who did not VOTE12. Then when doing the Numerical graph it shows the amount of people who voted in 2012 have 16 years of education which is more than those who didn't vote in 2012. T tests shows that this means those who voted in 2012 have higher education than those who did not. The P-Value is 1.248e-07. When solving this equation it would be .0000001 so we reject the null hypothesis there is no difference of years EDU who did not VOTE12. In conclusion there is a difference in those who did vote 2012 than those who didn't. 
 
 #  Question 3
 
