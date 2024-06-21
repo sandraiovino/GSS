@@ -160,7 +160,7 @@ When doing the  boxchart shows that the people who voted in 2012 tend to have hi
 #  Question 3
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
-
+ 
 Determine if a persons performance on the wordsum test (WORDSUM) is independent of their level of schooling (DEGREE).
 
 $H_0$  
