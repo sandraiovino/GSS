@@ -150,12 +150,12 @@ Those who did not vote in 2012 have a little over 13 years of education.
 ```{r}
 t.test(EDUC~VOTE12,data=GSSdata)
 ``` 
-this T tests shows that this means those who voted in 2012 have higher education than those who did not. The P-Value is 1.248e-07. When solving this equation it would be .0000001 so we reject the null hypothesis there is no difference of years EDU who did not VOTE12. 
+This T tests shows that this means those who voted in 2012 have higher education than those who did not. The P-Value is 1.248e-07, when solving this equation it would be .0000001. We reject the null hypothesis there is no difference of years EDU who did not VOTE12. 
 
 
 ### Conclusion  
 In this question we tried to figure out how many people voted in 2012 have a higher education.  
-When doing the  boxchart shows that the people who voted in 2012 tend to have higher EDUC than those who did not VOTE12. Then when doing the Numerical graph it shows the amount of people who voted in 2012 have 16 years of education which is more than those who didn't vote in 2012. T tests shows that this means those who voted in 2012 have higher education than those who did not. The P-Value is 1.248e-07. When solving this equation it would be .0000001 so we reject the null hypothesis there is no difference of years EDU who did not VOTE12. In conclusion there is a difference in those who did vote 2012 than those who didn't. 
+When doing the  boxchart shows that the people who voted in 2012 tend to have higher EDUC than those who did not VOTE12. Then when doing the Numerical graph it shows the amount of people who voted in 2012 have 16 years of education which is more than those who didn't vote in 2012. T tests shows that this means those who voted in 2012 have higher education than those who did not. The P-Value is 1.248e-07. When solving this equation it would be .0000001 so we reject the null hypothesis there is no difference of years EDU who did not VOTE12. In conclusion there is a difference in those who did vote 2012. 
 
 #  Question 3
 
@@ -192,7 +192,7 @@ plot(WORDSUM~DEGREE,data=GSSdata)
 ```
   
 This graph shows the Junior College and Bachelor Degree have about the same amount of Wordsum test,  
-but graduates have a little more than Junior College or Bachelor Degree.      
+but graduates have a little more than Junior College or Bachelor Degree. The LT High school have the leat education.      
 
 
 #### Numerical Descriptive Results
@@ -203,7 +203,7 @@ but graduates have a little more than Junior College or Bachelor Degree.
 favstats(WORDSUM~DEGREE,data=GSSdata)
 ```
 
-The numerical description results that graduates have the highest mean and it is less than high school because it is the lowest  
+The numerical description results, graduates have the highest mean and LT High School has the lowest Mean. Junior College and Bachelor have rough almost about the same mean and High school is mean higher than LT High school but lower than the rest of the Degree's. 
 
 ### Inferential Results
 
@@ -224,11 +224,11 @@ plot(TukeyHSD(model1),las=2)
 
  This graph shows that the P-Value is .0000002, which is less than 0.05. This means that we reject the null hypothesis Wordsum  is not independent of level schooling DEGREE. They are in fact independent of one another.    
     
-Tukey conclusion states there is no difference high school and less than high school.   
-There is a difference between junior College and High school      
-no difference between high school and graduates     
-no difference between junior college and graduates     
-no difference between bachelors an graduates.   
+Tukey conclusion states there is no difference High School and less than high school.   
+There is a difference between junior College and LS High School      
+no difference between LS High School and Graduates     
+no difference between Junior College and Graduates     
+no difference between Bachelors and Graduates.   
     
 #  Conclusion
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
